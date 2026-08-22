@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="fi" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ripsipiste Anni Toiva</title>
+  <meta name="description" content="Ripsipiste Anni Toiva tarjoaa laadukkaat ja yksilölliset ripsipalvelut osoitteessa Nuijamiestentie 1. Korosta luonnollista kauneuttasi ja säästä aikaa aamuisin." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#fdf2f8',  // Erittäin vaalea pinkki
+              100: '#fce7f3', // Vaalea pinkki
+              200: '#fbcfe8',
+              300: '#f9a8d4',
+              400: '#f472b6',
+              500: '#ec4899', // Pääpinkki
+              600: '#db2777',
+              800: '#9d174d', // Tumma roosa
+              900: '#831843', // Erittäin tumma, teksteihin
+            },
+          },
+          fontFamily: {
+            sans: ["Inter", "system-ui", "sans-serif"],
+            serif: ["Cormorant Garamond", "Georgia", "serif"],
+          },
+          animation: {
+            'float-slow': 'float 6s ease-in-out infinite',
+            'float-delayed': 'float 6s ease-in-out 3s infinite',
+          },
+          keyframes: {
+            float: {
+              '0%, 100%': { transform: 'translateY(0)' },
+              '50%': { transform: 'translateY(-12px)' },
+            }
+          }
+        },
+      },
+    };
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet" />
+
+  <!-- Some-esikatselun tägit -->
+  <meta property="og:title" content="Uusi verkkosivuluonnos: Ripsipiste Anni Toiva" />
+  <meta property="og:description" content="Huomasimme, että yrityksenne kaipaisi modernimpia kotisivuja. Koodasimme teille valmiin vedoksen, katso miltä näyttää!" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+</head>
+<body class="bg-[#fffbfc] font-sans text-gray-700 antialiased selection:bg-brand-200 selection:text-brand-900">
+
+  <header class="fixed inset-x-0 top-0 z-50 bg-white/70 backdrop-blur-xl border-b border-brand-50 transition-all">
+    <nav class="mx-auto flex max-w-7xl items-center justify-between px-6 py-5">
+      <a href="#" class="text-3xl font-serif font-bold tracking-wide text-brand-900 flex items-center gap-2">
+        <span class="text-brand-300 text-3xl leading-none animate-float-slow">✧</span>Ripsipiste Anni Toiva
+      </a>
+      <div class="hidden items-center gap-10 md:flex">
+        <a href="#services" class="text-sm font-medium tracking-widest uppercase text-gray-500 transition hover:text-brand-600">Palvelut</a>
+        <a href="#contact" class="text-sm font-medium tracking-widest uppercase text-gray-500 transition hover:text-brand-600">Yhteystiedot</a>
+      </div>
+      <a href="#contact" class="rounded-full bg-brand-800 px-8 py-3 text-sm font-medium tracking-wider text-white shadow-lg shadow-brand-200 transition-all hover:bg-brand-900 hover:shadow-xl hover:-translate-y-0.5">Varaa Aika</a>
+    </nav>
+  </header>
+
+  <section class="relative overflow-hidden bg-gradient-to-b from-brand-50 to-[#fffbfc] pt-32 pb-24 lg:pt-48 lg:pb-32">
+    <!-- Sumeat, kelluvat taustapallot pehmeyttä tuomassa -->
+    <div class="absolute top-10 right-10 w-[30rem] h-[30rem] rounded-full bg-brand-200/30 mix-blend-multiply filter blur-[80px] opacity-70 animate-float-slow"></div>
+    <div class="absolute bottom-10 left-10 w-[25rem] h-[25rem] rounded-full bg-pink-100/50 mix-blend-multiply filter blur-[60px] opacity-70 animate-float-delayed"></div>
+    
+    <div class="relative mx-auto max-w-7xl px-6 z-10">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <div>
+          <div class="inline-flex items-center gap-2 mb-8 text-sm font-medium tracking-widest uppercase text-brand-500">
+            <span class="h-px w-10 bg-brand-300 rounded-full"></span>Sinun aikaasi varten
+          </div>
+          <h1 class="text-5xl font-serif font-bold leading-tight text-brand-900 md:text-6xl lg:text-7xl mb-6">Kauniit ripset Hämeenkyrössä</h1>
+          <p class="text-lg leading-relaxed text-gray-500 md:text-xl mb-10 max-w-lg font-light">Ripsipiste Anni Toiva tarjoaa laadukkaat ja yksilölliset ripsipalvelut osoitteessa Nuijamiestentie 1. Korosta luonnollista kauneuttasi ja säästä aikaa aamuisin.</p>
+          <div class="flex flex-col sm:flex-row gap-5">
+            <a href="#contact" class="inline-flex justify-center items-center w-full sm:w-auto px-9 py-4 text-base font-medium tracking-wider text-white transition-all duration-300 bg-brand-800 rounded-full shadow-xl shadow-brand-300/40 hover:bg-brand-900 hover:-translate-y-1">Varaa aika</a>
+            <a href="#services" class="inline-flex justify-center items-center w-full sm:w-auto px-9 py-4 text-base font-medium tracking-wider text-brand-800 transition-all duration-300 bg-white/50 backdrop-blur-sm border border-brand-200 rounded-full hover:bg-brand-100/50 hover:shadow-lg shadow-sm">Tutustu palveluihin</a>
+          </div>
+        </div>
+        <div class="hidden lg:block relative animate-float-slow">
+          <!-- Pehmeä, pyöreä esittelykortti kuvan korvikkeena -->
+          <div class="relative w-full max-w-sm mx-auto rounded-[3rem] bg-white/70 border border-white backdrop-blur-xl p-12 shadow-2xl shadow-brand-200/50 text-center">
+            <div class="absolute -top-6 -right-6 h-24 w-24 bg-gradient-to-tr from-brand-100 to-white rounded-full flex items-center justify-center shadow-lg border border-white"><span class="text-4xl">🌸</span></div>
+            <h3 class="text-3xl font-serif font-bold text-brand-900 mb-4 mt-6">Hemmottelua arkeen</h3>
+            <p class="text-gray-500 font-light leading-relaxed mb-4">Meillä pysähdyt hetkeksi nauttimaan ansaitusta omasta ajasta. Tarjoamme rauhallisen ja hellävaraisen ympäristön.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="services" class="mx-auto max-w-7xl px-6 py-24 lg:py-32 relative">
+    <div class="text-center mb-20 relative z-10">
+      <h2 class="text-4xl font-serif font-bold text-brand-900 sm:text-5xl mb-6">Palveluvalikoimamme</h2>
+      <p class="text-lg text-gray-500 max-w-2xl mx-auto font-light">Jokainen yksityiskohta on hiottu täydelliseksi, jotta voimme tarjota sinulle lempeän kokemuksen.</p>
+    </div>
+    <div class="grid grid-cols-1 gap-10 md:grid-cols-3 relative z-10">
+      <div class="group bg-white rounded-[2rem] p-10 text-center border border-brand-50 shadow-lg shadow-brand-100/40 hover:shadow-2xl hover:shadow-brand-200/50 hover:-translate-y-2 transition-all duration-500">
+        <div class="mx-auto mb-8 h-24 w-24 rounded-full bg-brand-50 flex items-center justify-center text-brand-400 group-hover:scale-110 transition-transform duration-500"><svg class="w-12 h-12" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg></div>
+        <h3 class="text-2xl font-serif font-bold text-brand-900 mb-4">Volyymiripset</h3>
+        <p class="text-gray-500 font-light leading-relaxed">Huolella ja ammattitaidolla toteutettu palvelu, joka korostaa luonnollista kauneuttasi.</p>
+      </div>
+      <div class="group bg-white rounded-[2rem] p-10 text-center border border-brand-50 shadow-lg shadow-brand-100/40 hover:shadow-2xl hover:shadow-brand-200/50 hover:-translate-y-2 transition-all duration-500">
+        <div class="mx-auto mb-8 h-24 w-24 rounded-full bg-brand-50 flex items-center justify-center text-brand-400 group-hover:scale-110 transition-transform duration-500"><svg class="w-12 h-12" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" /></svg></div>
+        <h3 class="text-2xl font-serif font-bold text-brand-900 mb-4">Klassiset ripsienpidennykset</h3>
+        <p class="text-gray-500 font-light leading-relaxed">Yksilöllisesti juuri sinun toiveidesi mukaan räätälöity rentouttava kokonaisuus.</p>
+      </div>
+      <div class="group bg-white rounded-[2rem] p-10 text-center border border-brand-50 shadow-lg shadow-brand-100/40 hover:shadow-2xl hover:shadow-brand-200/50 hover:-translate-y-2 transition-all duration-500">
+        <div class="mx-auto mb-8 h-24 w-24 rounded-full bg-brand-50 flex items-center justify-center text-brand-400 group-hover:scale-110 transition-transform duration-500"><svg class="w-12 h-12" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" /></svg></div>
+        <h3 class="text-2xl font-serif font-bold text-brand-900 mb-4">Ripsien kestotaivutus</h3>
+        <p class="text-gray-500 font-light leading-relaxed">Korkealuokkaiset tuotteet ja lempeä kosketus takaavat täydellisen lopputuloksen.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="bg-brand-50 py-24 relative overflow-hidden">
+    <div class="absolute inset-0 bg-gradient-to-t from-white to-transparent opacity-60"></div>
+    <div class="mx-auto max-w-7xl px-6 lg:px-8 mt-10 relative z-10">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <div>
+          <h2 class="text-4xl font-serif font-bold text-brand-900 sm:text-5xl mb-6 leading-tight">Varaa hetki <br/><span class="text-brand-500 italic">itsellesi</span></h2>
+          <p class="text-lg text-gray-600 font-light leading-relaxed mb-10 max-w-md">
+            Ota meihin yhteyttä viereisellä lomakkeella, niin suunnitellaan yhdessä sinulle sopivin hoito. Vastaamme kaikkiin tiedusteluihin mahdollisimman pian.
+          </p>
+          <div class="space-y-6 text-gray-600">
+            <div class="flex items-center gap-4">
+              <div class="h-10 w-10 rounded-full bg-white shadow-sm flex items-center justify-center text-brand-400">📍</div>
+              <span class="font-light tracking-wide">Nuijamiestentie 1, 39100 Hämeenkyrö, Suomi</span>
+            </div>
+            <div class="flex items-center gap-4">
+              <div class="h-10 w-10 rounded-full bg-white shadow-sm flex items-center justify-center text-brand-400">📞</div>
+              <span class="font-light tracking-wide font-medium">Ei ilmoitettu</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white/80 backdrop-blur-md rounded-[2.5rem] p-8 sm:p-12 shadow-2xl shadow-brand-200/50 border border-white text-gray-800">
+          <form action="https://formsubmit.co/joni@luottosivut.fi" method="POST" class="space-y-6">
+            <input type="text" name="_honey" style="display:none">
+            <input type="hidden" name="_captcha" value="false">
+            <div>
+              <label class="block text-sm font-medium tracking-wide text-gray-600 mb-2 ml-2">Nimesi</label>
+              <input type="text" name="Nimi" required class="block w-full rounded-full bg-brand-50/50 border-0 px-6 py-4 text-gray-900 ring-1 ring-inset ring-brand-100 focus:ring-2 focus:ring-inset focus:ring-brand-300 font-light transition-shadow">
+            </div>
+            <div>
+              <label class="block text-sm font-medium tracking-wide text-gray-600 mb-2 ml-2">Puhelin tai Sähköposti</label>
+              <input type="text" name="Yhteystieto" required class="block w-full rounded-full bg-brand-50/50 border-0 px-6 py-4 text-gray-900 ring-1 ring-inset ring-brand-100 focus:ring-2 focus:ring-inset focus:ring-brand-300 font-light transition-shadow">
+            </div>
+            <div>
+              <label class="block text-sm font-medium tracking-wide text-gray-600 mb-2 ml-2">Kuinka voimme palvella?</label>
+              <textarea name="Viesti" rows="4" required class="block w-full rounded-[2rem] bg-brand-50/50 border-0 px-6 py-4 text-gray-900 ring-1 ring-inset ring-brand-100 focus:ring-2 focus:ring-inset focus:ring-brand-300 font-light resize-none transition-shadow"></textarea>
+            </div>
+            <button type="submit" class="block w-full rounded-full bg-brand-800 px-6 py-4 text-center text-base font-medium tracking-wider text-white shadow-lg shadow-brand-300/50 hover:bg-brand-900 hover:-translate-y-1 transition-all duration-300 mt-8">Lähetä viesti</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-white py-16 text-center border-t border-brand-50 mt-10">
+    <div class="mx-auto max-w-7xl px-6 flex flex-col items-center">
+      <span class="text-3xl font-serif font-bold tracking-wide text-brand-900 mb-4 block">Ripsipiste Anni Toiva</span>
+      <p class="text-sm text-gray-400 font-light tracking-wide">&copy; 2026 Ripsipiste Anni Toiva. Kaikki oikeudet pidätetään.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
