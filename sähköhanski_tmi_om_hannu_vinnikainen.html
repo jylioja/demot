@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="fi" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sähkö-Hanski Tmi om. Hannu Vinnikainen | Sähköalan Ammattilainen</title>
+  <meta name="description" content="Sähkö-Hanski Tmi tarjoaa luotettavat ja turvalliset sähköpalvelut Nokialla ja lähialueilla. Hannu Vinnikainen palvelee ammattitaidolla osoitteessa Lähdemutka 10." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#f0f9ff',
+              100: '#e0f2fe',
+              // Sähkönsininen / Turkoosi
+              500: '#0ea5e9', 
+              600: '#0284c7',
+              // Tumma siniharmaa
+              800: '#1e293b',
+              900: '#0f172a',
+              950: '#020617',
+            },
+          },
+          fontFamily: {
+            sans: ["Space Grotesk", "sans-serif"],
+          },
+          boxShadow: {
+            'glow': '0 0 20px -5px rgba(14, 165, 233, 0.4)',
+          }
+        },
+      },
+    };
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Some-esikatselun tägit -->
+  <meta property="og:title" content="Uusi verkkosivuluonnos: Sähkö-Hanski Tmi om. Hannu Vinnikainen" />
+  <meta property="og:description" content="Huomasimme, että yrityksenne kaipaisi modernimpia kotisivuja. Koodasimme teille valmiin vedoksen, katso miltä näyttää!" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+</head>
+<body class="bg-brand-950 font-sans text-brand-50 antialiased selection:bg-brand-500 selection:text-white">
+
+  <!-- Tekninen yläpalkki -->
+  <header class="fixed inset-x-0 top-0 z-50 bg-brand-950/80 backdrop-blur-md border-b border-brand-800 transition-all">
+    <nav class="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
+      <a href="#" class="flex items-center gap-2 text-2xl font-bold tracking-tight text-white">
+        <div class="text-brand-500 text-3xl">⚡</div>
+        Sähkö-Hanski Tmi om. Hannu Vinnikainen
+      </a>
+      <div class="hidden items-center gap-8 md:flex">
+        <a href="#services" class="text-sm font-medium text-brand-100 hover:text-brand-500 transition-colors">Palvelut</a>
+        <a href="#contact" class="text-sm font-medium text-brand-100 hover:text-brand-500 transition-colors">Yhteydenotto</a>
+      </div>
+      <a href="#contact" class="rounded bg-brand-500 px-6 py-2.5 text-sm font-bold text-white hover:bg-brand-400 shadow-glow transition-all">
+        Pyydä Tarjous
+      </a>
+    </nav>
+  </header>
+
+  <!-- Pimeä ja tyylikäs Hero -->
+  <section class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden bg-brand-950">
+    <!-- Hienovarainen "piirikortti" tai sähköverkkomainen tausta -->
+    <div class="absolute inset-0 bg-[linear-gradient(to_right,#1e293b_1px,transparent_1px),linear-gradient(to_bottom,#1e293b_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_50%,#000_70%,transparent_100%)] opacity-30"></div>
+    
+    <div class="mx-auto max-w-7xl px-6 lg:px-8 relative z-10">
+      <div class="max-w-2xl">
+        <div class="inline-flex items-center gap-2 rounded-full border border-brand-500/30 bg-brand-500/10 px-3 py-1 text-sm font-medium text-brand-500 mb-8">
+          <span class="flex h-2 w-2 rounded-full bg-brand-500 animate-pulse"></span>
+          Virtaa ja turvallisuutta
+        </div>
+        <h1 class="text-5xl font-bold tracking-tight text-white sm:text-6xl lg:text-7xl mb-6">
+          Ammattitaitoiset sähkötyöt Nokialla
+        </h1>
+        <p class="mt-4 text-xl leading-8 text-brand-100/70 mb-10">
+          Sähkö-Hanski Tmi tarjoaa luotettavat ja turvalliset sähköpalvelut Nokialla ja lähialueilla. Hannu Vinnikainen palvelee ammattitaidolla osoitteessa Lähdemutka 10. Tarjoamme luotettavat ja sertifioidut sähkötyöt koteihin, taloyhtiöihin ja yrityksille.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4">
+          <a href="#contact" class="rounded bg-brand-500 px-8 py-4 text-center text-base font-bold text-white hover:bg-brand-400 shadow-glow transition-all">
+            Pyydä tarjous
+          </a>
+          <a href="#services" class="rounded px-8 py-4 text-center text-base font-bold text-white border border-brand-800 hover:bg-brand-800 transition-all">
+            Selaa palveluita
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Palveluosio / Tekninen erittely -->
+  <section id="services" class="py-24 bg-brand-900 border-t border-brand-800">
+    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+      <div class="mb-16 max-w-2xl">
+        <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">Sähkötyöt vaativat asiantuntijaa.</h2>
+        <p class="mt-4 text-lg text-brand-100/60">Toteutamme kaikki työt SFS 6000 -standardien mukaisesti turvallisuudesta tinkimättä.</p>
+      </div>
+      
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <!-- Kortti 1 -->
+        <div class="bg-brand-950 border border-brand-800 p-8 rounded-lg hover:border-brand-500/50 transition-colors group">
+          <div class="h-12 w-12 rounded bg-brand-800/50 flex items-center justify-center text-brand-500 mb-6 group-hover:scale-110 transition-transform">
+            <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+          </div>
+          <h3 class="text-xl font-bold text-white mb-3">Sähköasennukset</h3>
+          <p class="text-brand-100/60 leading-relaxed">Teemme kattavat sähköasennukset uudiskohteisiin ja saneerauksiin tarkasti ja määräysten mukaisesti.</p>
+        </div>
+        <!-- Kortti 2 -->
+        <div class="bg-brand-950 border border-brand-800 p-8 rounded-lg hover:border-brand-500/50 transition-colors group">
+          <div class="h-12 w-12 rounded bg-brand-800/50 flex items-center justify-center text-brand-500 mb-6 group-hover:scale-110 transition-transform">
+            <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+          </div>
+          <h3 class="text-xl font-bold text-white mb-3">Sähköhuolto ja -korjaukset</h3>
+          <p class="text-brand-100/60 leading-relaxed">Vianetsinnät, pistorasioiden ja valaisimien vaihdot sekä muut nopeat sähköhuollot kotiin tai toimistolle.</p>
+        </div>
+        <!-- Kortti 3 -->
+        <div class="bg-brand-950 border border-brand-800 p-8 rounded-lg hover:border-brand-500/50 transition-colors group">
+          <div class="h-12 w-12 rounded bg-brand-800/50 flex items-center justify-center text-brand-500 mb-6 group-hover:scale-110 transition-transform">
+            <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"/></svg>
+          </div>
+          <h3 class="text-xl font-bold text-white mb-3">Sähkösaneeraukset</h3>
+          <p class="text-brand-100/60 leading-relaxed">Sähköautojen latausasemien asennukset ja älykotiratkaisut, jotka tekevät arjesta sujuvampaa.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Yhteydenotto (Korkea kontrasti) -->
+  <section id="contact" class="py-24 bg-brand-950">
+    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 bg-brand-900 border border-brand-800 rounded-2xl overflow-hidden shadow-2xl">
+        
+        <div class="p-10 lg:p-16 flex flex-col justify-center">
+          <h2 class="text-3xl font-bold tracking-tight text-white mb-4">Tarvitsetko sähkömiestä?</h2>
+          <p class="text-brand-100/60 mb-8">Kerro meille projektistasi, niin palaamme asiaan mahdollisimman pian tarjouksen tai hinta-arvion kera.</p>
+          
+          <dl class="space-y-6">
+            <div class="flex items-center gap-4 text-lg">
+              <dt class="bg-brand-800 p-3 rounded text-brand-500">📍</dt>
+              <dd class="font-medium text-white">Lähdemutka 10, 37120 Nokia, Suomi</dd>
+            </div>
+            <div class="flex items-center gap-4 text-lg">
+              <dt class="bg-brand-800 p-3 rounded text-brand-500">📞</dt>
+              <dd class="font-bold text-white">Ei ilmoitettu</dd>
+            </div>
+          </dl>
+        </div>
+        
+        <div class="p-10 lg:p-16 bg-brand-800/20 border-l border-brand-800">
+          <form action="https://formsubmit.co/joni@luottosivut.fi" method="POST" class="space-y-5">
+            <input type="text" name="_honey" style="display:none">
+            <input type="hidden" name="_captcha" value="false">
+            
+            <div>
+              <label class="block text-sm font-medium text-brand-100/70 mb-2">Nimi / Yritys</label>
+              <input type="text" name="Nimi" required class="w-full bg-brand-950 border border-brand-800 rounded px-4 py-3 text-white focus:border-brand-500 focus:ring-1 focus:ring-brand-500 outline-none transition-all">
+            </div>
+            <div>
+              <label class="block text-sm font-medium text-brand-100/70 mb-2">Puhelinnumero tai sähköposti</label>
+              <input type="text" name="Yhteystieto" required class="w-full bg-brand-950 border border-brand-800 rounded px-4 py-3 text-white focus:border-brand-500 focus:ring-1 focus:ring-brand-500 outline-none transition-all">
+            </div>
+            <div>
+              <label class="block text-sm font-medium text-brand-100/70 mb-2">Mitä sähkötöitä tarvitaan?</label>
+              <textarea name="Viesti" rows="4" required class="w-full bg-brand-950 border border-brand-800 rounded px-4 py-3 text-white focus:border-brand-500 focus:ring-1 focus:ring-brand-500 outline-none transition-all resize-none"></textarea>
+            </div>
+            <button type="submit" class="w-full bg-brand-500 text-white font-bold py-4 rounded hover:bg-brand-400 shadow-glow transition-all mt-4">
+              Lähetä Tarjouspyyntö
+            </button>
+          </form>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-brand-950 py-8 border-t border-brand-800 text-center">
+    <p class="text-brand-100/40 text-sm font-medium">&copy; 2026 Sähkö-Hanski Tmi om. Hannu Vinnikainen. Kaikki oikeudet pidätetään.</p>
+  </footer>
+</body>
+</html>
