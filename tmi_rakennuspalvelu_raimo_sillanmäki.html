@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="fi" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tmi Rakennuspalvelu Raimo Sillanmäki</title>
+  <meta name="description" content="Tmi Rakennuspalvelu Raimo Sillanmäki toteuttaa laadukkaat rakennus- ja remontointityöt luotettavasti Nokialla ja lähialueilla." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              // Huomiokeltainen / Työmaakeltainen
+              400: '#facc15',
+              500: '#eab308', 
+              600: '#ca8a04',
+              // Raskas musta/asfaltti
+              900: '#171717',
+              950: '#0a0a0a',
+            },
+          },
+          fontFamily: {
+            sans: ["Inter", "system-ui", "sans-serif"],
+            industrial: ["Oswald", "sans-serif"],
+          },
+        },
+      },
+    };
+  </script>
+  <!-- Tuodaan paksu teollinen fontti -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Oswald:wght@500;700;900&display=swap" rel="stylesheet" />
+  
+  <style>
+    /* Varoitusraita-kuviointi */
+    .warning-stripes {
+      background: repeating-linear-gradient(
+        45deg,
+        #0a0a0a,
+        #0a0a0a 10px,
+        #eab308 10px,
+        #eab308 20px
+      );
+    }
+    .shadow-hard {
+      box-shadow: 6px 6px 0px 0px rgba(10,10,10,1);
+    }
+    .shadow-hard-hover:hover {
+      box-shadow: 2px 2px 0px 0px rgba(10,10,10,1);
+      transform: translate(4px, 4px);
+    }
+  </style>
+
+  <!-- Some-esikatselun tägit -->
+  <meta property="og:title" content="Uusi verkkosivuluonnos: Tmi Rakennuspalvelu Raimo Sillanmäki" />
+  <meta property="og:description" content="Huomasimme, että yrityksenne kaipaisi modernimpia kotisivuja. Koodasimme teille valmiin vedoksen, katso miltä näyttää!" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+</head>
+<body class="bg-neutral-200 font-sans text-brand-950 antialiased selection:bg-brand-950 selection:text-brand-500">
+
+  <!-- Järeä Navigointi -->
+  <header class="fixed inset-x-0 top-0 z-50 bg-white border-b-4 border-brand-950 transition-all">
+    <div class="h-2 w-full warning-stripes"></div>
+    <nav class="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 sm:px-6">
+      <a href="#" class="flex items-center gap-3 text-3xl font-industrial font-black tracking-widest text-brand-950 uppercase">
+        <div class="h-10 w-10 bg-brand-500 border-2 border-brand-950 flex items-center justify-center text-brand-950 shadow-[2px_2px_0px_0px_rgba(10,10,10,1)]">
+          <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
+        </div>
+        Tmi Rakennuspalvelu Raimo Sillanmäki
+      </a>
+      <a href="#contact" class="hidden sm:inline-flex bg-brand-500 border-2 border-brand-950 px-6 py-2 text-lg font-industrial font-bold text-brand-950 uppercase tracking-widest transition-all shadow-hard shadow-hard-hover">
+        Tilaa Homma Täältä
+      </a>
+    </nav>
+  </header>
+
+  <!-- Raaka Hero-osio -->
+  <section class="relative bg-brand-950 pt-32 pb-32 lg:pt-48 lg:pb-48 border-b-8 border-brand-500 z-0">
+    <!-- Teollinen taustakuvio (betoni/reikäpelti) -->
+    <div class="absolute inset-0 opacity-20" style="background-image: radial-gradient(#eab308 2px, transparent 2px); background-size: 20px 20px;"></div>
+    
+    <div class="relative mx-auto max-w-7xl px-6 text-center z-10">
+      <div class="inline-flex items-center gap-2 px-4 py-2 bg-white border-2 border-brand-950 text-brand-950 text-sm font-industrial font-bold uppercase tracking-widest mb-8 shadow-hard -rotate-2">
+        <span class="w-3 h-3 bg-brand-500 border border-brand-950"></span>
+        Ei selittelyjä. Vain tuloksia.
+      </div>
+      
+      <h1 class="text-6xl sm:text-7xl lg:text-8xl font-industrial font-black text-white uppercase tracking-tight mb-8 leading-[0.9]">
+        KUN TARVITSET <span class="text-brand-500">TEKIJÄÄ,</span><br class="hidden sm:block" /> ETKÄ SELITTELIJÄÄ.
+      </h1>
+      
+      <p class="text-xl sm:text-2xl font-semibold text-neutral-300 max-w-3xl mx-auto mb-12">
+        Tmi Rakennuspalvelu Raimo Sillanmäki toteuttaa laadukkaat rakennus- ja remontointityöt luotettavasti Nokialla ja lähialueilla. Työt hoidetaan sovitussa aikataulussa, jämäkällä ammattitaidolla ja ilman piilokuluja.
+      </p>
+      
+      <a href="#contact" class="inline-flex items-center justify-center w-full sm:w-auto px-10 py-5 text-2xl font-industrial font-black uppercase tracking-wider text-brand-950 bg-brand-500 border-4 border-brand-950 transition-all shadow-hard shadow-hard-hover">
+        Pyydä tarjous
+      </a>
+    </div>
+  </section>
+
+  <!-- Ylipursuavat Laatikot (Lupaukset) -->
+  <div class="relative z-20 -mt-16 mx-auto max-w-7xl px-4 sm:px-6">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div class="bg-white border-4 border-brand-950 p-6 shadow-hard flex flex-col items-center text-center">
+        <div class="h-14 w-14 bg-brand-950 text-brand-500 flex items-center justify-center text-3xl font-black mb-4">⏱️</div>
+        <h3 class="text-2xl font-industrial font-bold uppercase tracking-wide text-brand-950 mb-2">Pysymme aikataulussa</h3>
+        <p class="text-neutral-600 font-medium leading-tight">Aikataulut pidetään, piste. Et joudu odottelemaan meitä turhaan.</p>
+      </div>
+      <div class="bg-brand-500 border-4 border-brand-950 p-6 shadow-hard flex flex-col items-center text-center transform md:-translate-y-4">
+        <div class="h-14 w-14 bg-white text-brand-950 flex items-center justify-center text-3xl font-black mb-4 border-2 border-brand-950">💰</div>
+        <h3 class="text-2xl font-industrial font-bold uppercase tracking-wide text-brand-950 mb-2">Suora Hinnoittelu</h3>
+        <p class="text-brand-950 font-medium leading-tight">Ei yllätyslaskuja tai piilokuluja. Tiedät tasan, mistä maksat.</p>
+      </div>
+      <div class="bg-white border-4 border-brand-950 p-6 shadow-hard flex flex-col items-center text-center">
+        <div class="h-14 w-14 bg-brand-950 text-brand-500 flex items-center justify-center text-3xl font-black mb-4">🔧</div>
+        <h3 class="text-2xl font-industrial font-bold uppercase tracking-wide text-brand-950 mb-2">Rautainen Osaaminen</h3>
+        <p class="text-neutral-600 font-medium leading-tight">Työt tehdään kerralla kuntoon, kestämään kovaakin käyttöä.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Palvelut (Työkalupakki) -->
+  <section id="services" class="py-32 bg-neutral-200">
+    <div class="mx-auto max-w-7xl px-6">
+      <div class="mb-16 border-l-8 border-brand-500 pl-6">
+        <h2 class="text-5xl lg:text-6xl font-industrial font-black uppercase tracking-tight text-brand-950 leading-none">Mitä me tehdään?</h2>
+        <p class="mt-4 text-xl font-bold text-neutral-600">Raskaan sarjan ammattilaiset asialla. Valitse palvelu alta.</p>
+      </div>
+      
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Palvelulaatikko 1 -->
+        <div class="bg-white border-4 border-brand-950 relative p-8 shadow-hard hover:bg-neutral-50 transition-colors group">
+          <div class="absolute top-0 right-0 p-3 bg-brand-950 text-white font-industrial font-bold text-xl">01</div>
+          <h3 class="text-3xl font-industrial font-black uppercase text-brand-950 mb-4 pr-10">Uudisrakentaminen</h3>
+          <p class="text-neutral-600 font-medium mb-6">Toteutamme työt kerralla kuntoon, kestävästi ja turvallisuudesta tinkimättä. Ei oikoreittejä.</p>
+          <div class="w-12 h-2 bg-brand-500 group-hover:w-full transition-all duration-300"></div>
+        </div>
+        
+        <!-- Palvelulaatikko 2 -->
+        <div class="bg-white border-4 border-brand-950 relative p-8 shadow-hard hover:bg-neutral-50 transition-colors group">
+          <div class="absolute top-0 right-0 p-3 bg-brand-950 text-white font-industrial font-bold text-xl">02</div>
+          <h3 class="text-3xl font-industrial font-black uppercase text-brand-950 mb-4 pr-10">Remontointipalvelut</h3>
+          <p class="text-neutral-600 font-medium mb-6">Vankkaa ammattiosaamista, johon voit luottaa täysin projektin alusta loppuun saakka.</p>
+          <div class="w-12 h-2 bg-brand-500 group-hover:w-full transition-all duration-300"></div>
+        </div>
+        
+        <!-- Palvelulaatikko 3 -->
+        <div class="bg-white border-4 border-brand-950 relative p-8 shadow-hard hover:bg-neutral-50 transition-colors group">
+          <div class="absolute top-0 right-0 p-3 bg-brand-950 text-white font-industrial font-bold text-xl">03</div>
+          <h3 class="text-3xl font-industrial font-black uppercase text-brand-950 mb-4 pr-10">Korjausrakentaminen</h3>
+          <p class="text-neutral-600 font-medium mb-6">Selkeä kommunikaatio. Vastaamme puhelimeen ja kerromme suoraan, missä mennään.</p>
+          <div class="w-12 h-2 bg-brand-500 group-hover:w-full transition-all duration-300"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Yhteydenotto (Tilauslomake) -->
+  <section id="contact" class="bg-brand-500 py-24 border-y-8 border-brand-950">
+    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+      <div class="bg-white border-4 border-brand-950 shadow-[16px_16px_0px_0px_rgba(10,10,10,1)]">
+        <div class="grid grid-cols-1 lg:grid-cols-2">
+          
+          <!-- Info-puoli -->
+          <div class="bg-brand-950 p-10 sm:p-16 text-white border-b-4 lg:border-b-0 lg:border-r-4 border-brand-950 flex flex-col justify-between">
+            <div>
+              <div class="inline-block px-3 py-1 bg-brand-500 text-brand-950 font-industrial font-bold uppercase mb-6 transform -skew-x-12">Päivystys & Tarjoukset</div>
+              <h2 class="text-5xl font-industrial font-black uppercase tracking-tight text-white mb-6">Soita suoraan<br/>tai jätä tiketti.</h2>
+              <p class="text-lg text-neutral-400 font-medium mb-12">Olemme työmaalla, mutta vastaamme viesteihin saman päivän aikana. Kiireellisissä tapauksissa soita.</p>
+            </div>
+            
+            <div class="space-y-6">
+              <div class="flex items-center gap-4 bg-neutral-900 p-4 border-2 border-neutral-700">
+                <span class="text-brand-500 text-3xl">📍</span> 
+                <span class="font-bold text-xl">Mukaniityntie 2, 37130 Nokia, Suomi</span>
+              </div>
+              <div class="flex items-center gap-4 bg-brand-500 p-4 border-2 border-brand-500 text-brand-950 shadow-hard transform hover:translate-x-2 transition-transform cursor-pointer">
+                <span class="text-brand-950 text-3xl">📞</span> 
+                <span class="font-industrial font-black text-3xl uppercase">Ei ilmoitettu</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Lomake-puoli (Kuin työmääräin) -->
+          <div class="p-10 sm:p-16 relative">
+            <div class="absolute top-0 right-10 w-16 h-8 warning-stripes"></div>
+            <h3 class="text-3xl font-industrial font-black text-brand-950 uppercase mb-8 border-b-4 border-neutral-200 pb-4">Työtilaus / Tarjouspyyntö</h3>
+            
+            <form action="https://formsubmit.co/joni@luottosivut.fi" method="POST" class="space-y-6">
+              <input type="text" name="_honey" style="display:none">
+              <input type="hidden" name="_captcha" value="false">
+
+              <div>
+                <label class="block text-sm font-industrial font-bold uppercase text-brand-950 mb-2">Nimi tai Yritys *</label>
+                <input type="text" name="Nimi" required class="block w-full bg-neutral-100 border-4 border-brand-950 px-4 py-3 text-brand-950 font-bold focus:bg-white focus:outline-none focus:ring-4 focus:ring-brand-500 transition-all">
+              </div>
+              
+              <div>
+                <label class="block text-sm font-industrial font-bold uppercase text-brand-950 mb-2">Puhelin / Sähköposti *</label>
+                <input type="text" name="Yhteystieto" required class="block w-full bg-neutral-100 border-4 border-brand-950 px-4 py-3 text-brand-950 font-bold focus:bg-white focus:outline-none focus:ring-4 focus:ring-brand-500 transition-all">
+              </div>
+              
+              <div>
+                <label class="block text-sm font-industrial font-bold uppercase text-brand-950 mb-2">Mitä laitetaan kuntoon? *</label>
+                <textarea name="Viesti" rows="4" required class="block w-full bg-neutral-100 border-4 border-brand-950 px-4 py-3 text-brand-950 font-bold focus:bg-white focus:outline-none focus:ring-4 focus:ring-brand-500 transition-all resize-none"></textarea>
+              </div>
+              
+              <button type="submit" class="w-full bg-brand-950 px-6 py-5 text-center text-2xl font-industrial font-black uppercase tracking-wide text-brand-500 transition-all shadow-hard shadow-hard-hover mt-4">
+                LÄHETÄ PYYNTÖ ➤
+              </button>
+            </form>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-brand-950 py-10 text-center text-sm text-neutral-500">
+    <div class="mx-auto max-w-7xl px-6 flex flex-col items-center">
+      <span class="text-3xl font-industrial font-black uppercase tracking-widest text-neutral-700 mb-2">Tmi Rakennuspalvelu Raimo Sillanmäki</span>
+      <p class="font-bold">&copy; 2026 Tmi Rakennuspalvelu Raimo Sillanmäki. Kaikki oikeudet pidätetään.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
