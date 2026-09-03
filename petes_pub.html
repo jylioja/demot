@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="fi" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pete's Pub | Paikallinen Olohuoneesi</title>
+  <meta name="description" content="Pete's Pub toivottaa sinut tervetulleeksi Hämeenkyrön osoitteeseen Valtakatu 61. Tule nauttimaan kylmistä juomista ja rennosta ilmapiiristä!" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              // Lämmin meripihka / Olut / Kulta
+              400: '#fbbf24',
+              500: '#f59e0b',
+              600: '#d97706',
+              // Syvä pubin tumma (hiili / tumma puu)
+              800: '#27272a',
+              900: '#18181b',
+              950: '#09090b',
+            },
+          },
+          fontFamily: {
+            sans: ["Inter", "sans-serif"],
+            serif: ["Rokkitt", "serif"],
+          },
+        },
+      },
+    };
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Rokkitt:wght@400;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Some-esikatselun tägit -->
+  <meta property="og:title" content="Uusi verkkosivuluonnos: Pete's Pub" />
+  <meta property="og:description" content="Huomasimme, että yrityksenne kaipaisi modernimpia kotisivuja. Koodasimme teille valmiin vedoksen, katso miltä näyttää!" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+</head>
+<body class="bg-brand-950 font-sans text-gray-300 antialiased selection:bg-brand-500 selection:text-brand-950">
+
+  <!-- Navigointi -->
+  <header class="fixed inset-x-0 top-0 z-50 bg-brand-950/90 backdrop-blur-md border-b border-brand-800 transition-all">
+    <nav class="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
+      <a href="#" class="flex items-center gap-2 text-3xl font-serif font-bold tracking-wide text-white uppercase">
+        <span class="text-brand-500">🍻</span>
+        Pete's Pub
+      </a>
+      <div class="hidden items-center gap-8 md:flex">
+        <a href="#services" class="text-sm font-medium tracking-widest uppercase text-gray-400 hover:text-brand-500 transition-colors">Tarjonta</a>
+        <a href="#contact" class="text-sm font-medium tracking-widest uppercase text-gray-400 hover:text-brand-500 transition-colors">Yhteystiedot</a>
+      </div>
+      <a href="#contact" class="rounded bg-brand-500 px-6 py-2 text-sm font-bold tracking-widest uppercase text-brand-950 hover:bg-brand-400 transition-colors shadow-[0_0_15px_rgba(245,158,11,0.3)] hover:shadow-[0_0_25px_rgba(245,158,11,0.5)]">
+        Varaa Pöytä
+      </a>
+    </nav>
+  </header>
+
+  <!-- Tunnelmallinen Hero -->
+  <section class="relative pt-32 pb-24 lg:pt-48 lg:pb-32 overflow-hidden bg-brand-950">
+    <!-- Hienovarainen sädekehä taustalla tuomassa lämpöä -->
+    <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(217,119,6,0.15)_0,rgba(9,9,11,1)_70%)] pointer-events-none"></div>
+    
+    <div class="mx-auto max-w-7xl px-6 lg:px-8 relative z-10 text-center">
+      <div class="mx-auto max-w-3xl">
+        <div class="inline-flex items-center gap-2 mb-6">
+          <span class="h-px w-8 bg-brand-500"></span>
+          <span class="text-xs font-bold tracking-[0.2em] uppercase text-brand-500">Kylmää juomaa, lämmintä seuraa</span>
+          <span class="h-px w-8 bg-brand-500"></span>
+        </div>
+        
+        <h1 class="text-5xl sm:text-6xl lg:text-7xl font-serif font-bold text-white mb-8 leading-tight tracking-wide">
+          Hämeenkyrön viihtyisin pubi
+        </h1>
+        
+        <p class="mt-4 text-lg sm:text-xl leading-relaxed text-gray-400 mb-12 max-w-2xl mx-auto font-light">
+          Pete's Pub toivottaa sinut tervetulleeksi Hämeenkyrön osoitteeseen Valtakatu 61. Tule nauttimaan kylmistä juomista ja rennosta ilmapiiristä! Astu peremmälle, unohda arjen kiireet ja nauti rennosta tunnelmasta paikallisessa olohuoneessasi.
+        </p>
+        
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-5">
+          <a href="#contact" class="w-full sm:w-auto rounded bg-brand-500 px-10 py-4 text-base font-bold tracking-widest uppercase text-brand-950 hover:bg-brand-400 transition-colors shadow-[0_0_20px_rgba(245,158,11,0.2)]">
+            Löydä meille
+          </a>
+          <a href="#services" class="w-full sm:w-auto rounded border-2 border-brand-800 px-10 py-4 text-base font-bold tracking-widest uppercase text-white hover:border-brand-500 hover:text-brand-500 transition-colors">
+            Mitä hanasta löytyy?
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tarjonta-osio (Palvelut) -->
+  <section id="services" class="py-24 bg-brand-900 border-t border-brand-800">
+    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl sm:text-5xl font-serif font-bold text-white tracking-wide">Tiskin Antimet</h2>
+        <div class="h-1 w-16 bg-brand-500 mx-auto mt-6 rounded"></div>
+      </div>
+      
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Kortti 1 -->
+        <div class="bg-brand-950 p-10 rounded-lg border border-brand-800 text-center group hover:border-brand-500/50 transition-colors">
+          <div class="text-5xl mb-6 transform group-hover:scale-110 transition-transform duration-300">🍺</div>
+          <h3 class="text-2xl font-serif font-bold text-white mb-4">Kylmät juomat</h3>
+          <p class="text-gray-400 font-light leading-relaxed">
+            Laaja ja vaihtuva valikoima paikallisten panimoiden erikoisuuksia sekä tuttuja ja turvallisia klassikoita suoraan hanasta.
+          </p>
+        </div>
+        
+        <!-- Kortti 2 -->
+        <div class="bg-brand-950 p-10 rounded-lg border border-brand-800 text-center group hover:border-brand-500/50 transition-colors">
+          <div class="text-5xl mb-6 transform group-hover:scale-110 transition-transform duration-300">🍔</div>
+          <h3 class="text-2xl font-serif font-bold text-white mb-4">Rento ilmapiiri</h3>
+          <p class="text-gray-400 font-light leading-relaxed">
+            Kun pikkunälkä iskee, meiltä löytyy tuhtia ja konstailematonta pubiruokaa, joka vie kielen mennessään ja pitää mielen virkeänä.
+          </p>
+        </div>
+        
+        <!-- Kortti 3 -->
+        <div class="bg-brand-950 p-10 rounded-lg border border-brand-800 text-center group hover:border-brand-500/50 transition-colors">
+          <div class="text-5xl mb-6 transform group-hover:scale-110 transition-transform duration-300">🎯</div>
+          <h3 class="text-2xl font-serif font-bold text-white mb-4">Viihtyisät illanvietot</h3>
+          <p class="text-gray-400 font-light leading-relaxed">
+            Biljardia, tikkaa, lautapelejä ja säännöllistä live-musiikkia. Meillä ilta kuluu siivillä hyvässä porukassa.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pöytävaraus / Yhteystiedot -->
+  <section id="contact" class="py-24 bg-brand-950 relative">
+    <div class="mx-auto max-w-7xl px-6 lg:px-8 relative z-10">
+      <div class="bg-brand-900 rounded-2xl border border-brand-800 overflow-hidden shadow-2xl flex flex-col lg:flex-row">
+        
+        <!-- Yhteystiedot -->
+        <div class="lg:w-5/12 p-10 lg:p-14 bg-brand-800/30 flex flex-col justify-center">
+          <h2 class="text-3xl font-serif font-bold text-white mb-4">Tuu käymään!</h2>
+          <p class="text-gray-400 mb-10 font-light">
+            Etsitkö paikkaa illanvietolle, haluatko varata pöydän isommalle porukalle tai järjestää yksityistilaisuuden? Laita viestiä.
+          </p>
+          
+          <div class="space-y-6">
+            <div class="flex items-start gap-4">
+              <div class="text-brand-500 text-2xl mt-1">📍</div>
+              <div>
+                <p class="text-sm font-bold tracking-widest uppercase text-gray-500 mb-1">Osoite</p>
+                <p class="text-white text-lg font-serif">Valtakatu 61, 39200 Hämeenkyrö, Suomi</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-4">
+              <div class="text-brand-500 text-2xl mt-1">📞</div>
+              <div>
+                <p class="text-sm font-bold tracking-widest uppercase text-gray-500 mb-1">Soita tiskille</p>
+                <p class="text-white text-lg font-serif">Ei ilmoitettu</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Lomake -->
+        <div class="lg:w-7/12 p-10 lg:p-14">
+          <h3 class="text-2xl font-serif font-bold text-white mb-8">Varaa Pöytä / Jätä Viesti</h3>
+          <form action="https://formsubmit.co/joni@luottosivut.fi" method="POST" class="space-y-6">
+            <input type="text" name="_honey" style="display:none">
+            <input type="hidden" name="_captcha" value="false">
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+              <div>
+                <label class="block text-xs font-bold tracking-widest text-gray-400 uppercase mb-2">Nimi tai Seurue</label>
+                <input type="text" name="Nimi" required class="w-full bg-brand-950 border border-brand-800 rounded px-4 py-3 text-white focus:border-brand-500 focus:outline-none transition-colors">
+              </div>
+              <div>
+                <label class="block text-xs font-bold tracking-widest text-gray-400 uppercase mb-2">Puhelin / Sähköposti</label>
+                <input type="text" name="Yhteystieto" required class="w-full bg-brand-950 border border-brand-800 rounded px-4 py-3 text-white focus:border-brand-500 focus:outline-none transition-colors">
+              </div>
+            </div>
+            
+            <div>
+              <label class="block text-xs font-bold tracking-widest text-gray-400 uppercase mb-2">Minkälaista iltaa suunnitellaan?</label>
+              <textarea name="Viesti" rows="4" required placeholder="Esim. Pöytävaraus 4 hengelle perjantaiksi klo 19:00..." class="w-full bg-brand-950 border border-brand-800 rounded px-4 py-3 text-white focus:border-brand-500 focus:outline-none transition-colors resize-none"></textarea>
+            </div>
+            
+            <button type="submit" class="w-full bg-brand-500 text-brand-950 font-bold tracking-widest uppercase py-4 rounded hover:bg-brand-400 transition-colors shadow-lg mt-2">
+              Lähetä Viesti
+            </button>
+          </form>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- Alatunniste -->
+  <footer class="bg-brand-950 border-t border-brand-800 py-10 text-center">
+    <p class="font-serif font-bold text-2xl tracking-widest text-white mb-2 uppercase">Pete's Pub</p>
+    <p class="text-gray-500 text-sm font-light">&copy; 2026 Pete's Pub. Kaikki oikeudet pidätetään.</p>
+  </footer>
+
+</body>
+</html>
