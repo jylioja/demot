@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="fi" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Erikoiskorjaamo J.Airaniemi | Autohuollot ja Korjaukset</title>
+  <meta name="description" content="Erikoiskorjaamo J.Airaniemi tarjoaa luotettavat autokorjaukset ja -huollot osoitteessa Puomikatu 5B, Nokia. Kysy lisää tai varaa aika: 040 0425088." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              // Teräksenharmaa
+              100: '#f1f5f9',
+              200: '#e2e8f0',
+              400: '#94a3b8',
+              800: '#1e293b', 
+              900: '#0f172a',
+              // Racing Punainen
+              red: '#dc2626',
+              red_dark: '#b91c1c',
+            },
+          },
+          fontFamily: {
+            sans: ["Roboto", "sans-serif"],
+            display: ["Barlow Condensed", "sans-serif"],
+          },
+        },
+      },
+    };
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,600;0,700;0,800;1,700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+
+  <!-- Some-esikatselun tägit -->
+  <meta property="og:title" content="Uusi verkkosivuluonnos: Erikoiskorjaamo J.Airaniemi" />
+  <meta property="og:description" content="Huomasimme, että yrityksenne kaipaisi modernimpia kotisivuja. Koodasimme teille valmiin vedoksen, katso miltä näyttää!" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+</head>
+<body class="bg-brand-100 font-sans text-brand-900 antialiased">
+
+  <!-- Roteva yläpalkki -->
+  <header class="fixed inset-x-0 top-0 z-50 bg-white border-b-4 border-brand-red transition-all shadow-md">
+    <nav class="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 sm:px-6">
+      <a href="#" class="flex items-center gap-2 text-3xl font-display font-bold tracking-wider text-brand-900 uppercase italic">
+        <span class="text-brand-red">///</span> Erikoiskorjaamo J.Airaniemi
+      </a>
+      <div class="hidden items-center gap-8 md:flex">
+        <a href="#services" class="text-base font-bold uppercase text-brand-800 hover:text-brand-red transition-colors">Huollot</a>
+        <a href="#contact" class="text-base font-bold uppercase text-brand-800 hover:text-brand-red transition-colors">Yhteystiedot</a>
+      </div>
+      <a href="#contact" class="hidden sm:block bg-brand-red px-6 py-2 text-lg font-display font-bold text-white uppercase italic hover:bg-brand-red_dark transition-colors transform skew-x-[-10deg]">
+        <span class="block transform skew-x-[10deg]">Varaa Huolto</span>
+      </a>
+    </nav>
+  </header>
+
+  <!-- Vauhdikas Hero -->
+  <section class="relative pt-32 pb-24 lg:pt-48 lg:pb-32 bg-brand-900 overflow-hidden">
+    <!-- Vinottainen taustaelementti tuomaan vauhtia -->
+    <div class="absolute top-0 right-0 w-2/3 h-full bg-brand-800 transform skew-x-[-20deg] translate-x-20 opacity-50 z-0"></div>
+    
+    <div class="mx-auto max-w-7xl px-6 lg:px-8 relative z-10 flex flex-col md:flex-row items-center">
+      <div class="w-full md:w-3/5 text-left">
+        <div class="inline-block bg-brand-red text-white text-sm font-bold uppercase px-3 py-1 mb-6 transform skew-x-[-10deg]">
+          <span class="block transform skew-x-[10deg]">Kaikki merkit ja mallit</span>
+        </div>
+        <h1 class="text-6xl sm:text-7xl lg:text-8xl font-display font-extrabold text-white uppercase italic leading-[0.9] tracking-tight mb-6">
+          AUTO KUNTOON. <br/><span class="text-brand-red">TURVALLISESTI TIELLE.</span>
+        </h1>
+        <p class="mt-4 text-lg sm:text-xl text-brand-200 mb-10 max-w-lg font-medium">
+          Erikoiskorjaamo J.Airaniemi tarjoaa luotettavat autokorjaukset ja -huollot osoitteessa Puomikatu 5B, Nokia. Kysy lisää tai varaa aika: 040 0425088. Meillä autosi on ammattilaisten käsissä. Nopea palvelu, läpinäkyvä hinnoittelu ja takuutyö.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4">
+          <a href="#contact" class="inline-block bg-brand-red px-8 py-4 text-2xl font-display font-bold text-white uppercase italic hover:bg-brand-red_dark transition-colors transform skew-x-[-10deg] text-center">
+            <span class="block transform skew-x-[10deg]">Soita: 040 0425088</span>
+          </a>
+        </div>
+      </div>
+      
+      <!-- Dekoraatioelementti hero-osioon -->
+      <div class="hidden md:flex w-2/5 justify-end mt-10 md:mt-0">
+        <div class="w-64 h-64 border-8 border-brand-800 rounded-full flex items-center justify-center opacity-30">
+          <svg class="w-32 h-32 text-brand-800" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Palveluosio (Mekaaninen ja suoraviivainen) -->
+  <section id="services" class="py-24 bg-brand-200">
+    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-5xl font-display font-bold uppercase text-brand-900 italic">Huollot ja Korjaukset</h2>
+        <div class="h-2 w-20 bg-brand-red mx-auto mt-4 transform skew-x-[-20deg]"></div>
+      </div>
+      
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Palvelu 1 -->
+        <div class="bg-white p-8 border-l-8 border-brand-red shadow-lg hover:-translate-y-1 transition-transform">
+          <div class="text-brand-400 mb-4">
+            <svg class="w-12 h-12" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z"/></svg>
+          </div>
+          <h3 class="text-2xl font-display font-bold uppercase text-brand-900 mb-3">Erikoiskorjaukset</h3>
+          <p class="text-brand-800 font-medium">Säännölliset määräaikaishuollot auton valmistajan ohjeiden mukaisesti. Vaihdamme öljyt, suodattimet ja tarkistamme menopelisi kunnon.</p>
+        </div>
+        
+        <!-- Palvelu 2 -->
+        <div class="bg-white p-8 border-l-8 border-brand-800 shadow-lg hover:-translate-y-1 transition-transform">
+          <div class="text-brand-400 mb-4">
+            <svg class="w-12 h-12" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/></svg>
+          </div>
+          <h3 class="text-2xl font-display font-bold uppercase text-brand-900 mb-3">Määräaikaishuollot</h3>
+          <p class="text-brand-800 font-medium">Vikakoodien luku ja vikojen diagnosointi moderneilla testilaitteilla. Löydämme syyn kojelaudassa palavaan valoon.</p>
+        </div>
+        
+        <!-- Palvelu 3 -->
+        <div class="bg-white p-8 border-l-8 border-brand-800 shadow-lg hover:-translate-y-1 transition-transform">
+          <div class="text-brand-400 mb-4">
+            <svg class="w-12 h-12" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+          </div>
+          <h3 class="text-2xl font-display font-bold uppercase text-brand-900 mb-3">Vianmääritys ja korjaukset</h3>
+          <p class="text-brand-800 font-medium">Alustan ja jarrujen korjaukset, pakoputkityöt sekä muut vaativammat mekaaniset työt vankalla kokemuksella.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Yhteydenotto -->
+  <section id="contact" class="py-24 bg-white">
+    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+      <div class="flex flex-col lg:flex-row gap-12 bg-brand-100 rounded-lg overflow-hidden border border-brand-200">
+        
+        <div class="lg:w-1/2 p-10 bg-brand-900 text-white">
+          <h2 class="text-4xl font-display font-bold uppercase italic mb-6">Aja korjaamolle tai soita.</h2>
+          <p class="text-brand-200 font-medium mb-10">Olemme täällä pitämässä autosi liikkeellä. Ota yhteyttä lomakkeella, niin varaamme sinulle sopivan huoltoajan.</p>
+          
+          <div class="space-y-6">
+            <div class="flex items-center gap-4">
+              <div class="w-12 h-12 bg-brand-800 flex items-center justify-center rounded transform skew-x-[-10deg]">
+                <span class="block transform skew-x-[10deg] text-xl">📍</span>
+              </div>
+              <span class="font-bold text-lg">Puomikatu 5B, 37150 Nokia, Suomi</span>
+            </div>
+            <div class="flex items-center gap-4">
+              <div class="w-12 h-12 bg-brand-red flex items-center justify-center rounded transform skew-x-[-10deg]">
+                <span class="block transform skew-x-[10deg] text-xl">📞</span>
+              </div>
+              <span class="font-bold text-xl">040 0425088</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="lg:w-1/2 p-10">
+          <h3 class="text-2xl font-display font-bold uppercase text-brand-900 mb-6">Pyydä Huoltoaika</h3>
+          <form action="https://formsubmit.co/joni@luottosivut.fi" method="POST" class="space-y-5">
+            <input type="text" name="_honey" style="display:none">
+            <input type="hidden" name="_captcha" value="false">
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+              <div>
+                <label class="block text-sm font-bold text-brand-800 mb-2 uppercase">Nimi</label>
+                <input type="text" name="Nimi" required class="w-full bg-white border-2 border-brand-200 p-3 font-medium focus:border-brand-red focus:outline-none transition-colors">
+              </div>
+              <div>
+                <label class="block text-sm font-bold text-brand-800 mb-2 uppercase">Rekisterinumero</label>
+                <input type="text" name="Rekisterinumero" placeholder="ABC-123" class="w-full bg-white border-2 border-brand-200 p-3 font-bold uppercase focus:border-brand-red focus:outline-none transition-colors">
+              </div>
+            </div>
+            <div>
+              <label class="block text-sm font-bold text-brand-800 mb-2 uppercase">Puhelinnumero tai Sähköposti</label>
+              <input type="text" name="Yhteystieto" required class="w-full bg-white border-2 border-brand-200 p-3 font-medium focus:border-brand-red focus:outline-none transition-colors">
+            </div>
+            <div>
+              <label class="block text-sm font-bold text-brand-800 mb-2 uppercase">Vian kuvaus tai huollon tarve</label>
+              <textarea name="Viesti" rows="3" required class="w-full bg-white border-2 border-brand-200 p-3 font-medium focus:border-brand-red focus:outline-none transition-colors resize-none"></textarea>
+            </div>
+            
+            <button type="submit" class="w-full bg-brand-red text-white font-display font-bold text-2xl uppercase italic py-4 hover:bg-brand-red_dark transition-colors transform skew-x-[-10deg] mt-4">
+              <span class="block transform skew-x-[10deg]">Lähetä Pyyntö</span>
+            </button>
+          </form>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-brand-900 py-8 text-center border-t-4 border-brand-red">
+    <p class="font-display font-bold uppercase text-brand-400 text-xl tracking-wider mb-2">Erikoiskorjaamo J.Airaniemi</p>
+    <p class="text-brand-400 text-sm">&copy; 2026 Kaikki oikeudet pidätetään.</p>
+  </footer>
+</body>
+</html>
