@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="fi" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kotipalvelu Lumoa | Raikasta ja Luotettavaa Siivouspalvelua</title>
+  <meta name="description" content="Kotipalvelu Lumoa tuo helpotusta ja lämpöä arkeen Kyröskosken alueella. Ota yhteyttä ja kysy lisää palveluistamme numerosta 044 9428102." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#f0fdf4',
+              100: '#dcfce7',
+              200: '#bbf7d0',
+              500: '#22c55e',
+              600: '#16a34a', // Raikas puhdas mintunvihreä
+              700: '#15803d',
+              800: '#166534',
+              900: '#14532d',
+              dark: '#0f172a',
+            },
+          },
+          fontFamily: {
+            sans: ["Plus Jakarta Sans", "sans-serif"],
+            display: ["Outfit", "sans-serif"],
+          },
+        },
+      },
+    };
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Some-esikatselun tägit -->
+  <meta property="og:title" content="Uusi verkkosivuluonnos: Kotipalvelu Lumoa" />
+  <meta property="og:description" content="Huomasimme, että yrityksenne kaipaisi modernimpia kotisivuja. Koodasimme teille valmiin vedoksen, katso miltä näyttää!" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+</head>
+<body class="bg-brand-50/60 font-sans text-slate-800 antialiased selection:bg-brand-600 selection:text-white">
+
+  <!-- Raikas ja kirkas yläpalkki -->
+  <header class="fixed inset-x-0 top-0 z-50 bg-white/95 backdrop-blur-md border-b border-emerald-100 shadow-sm transition-all">
+    <nav class="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
+      <a href="#" class="flex items-center gap-3 text-2xl font-display font-bold tracking-tight text-brand-900">
+        <div class="h-9 w-9 bg-brand-600 rounded-full flex items-center justify-center text-white text-lg shadow-md shadow-brand-600/30">
+          ✨
+        </div>
+        <span>Kotipalvelu Lumoa</span>
+      </a>
+      <div class="hidden items-center gap-8 md:flex">
+        <a href="#services" class="text-sm font-semibold text-slate-600 hover:text-brand-600 transition-colors">Palvelut</a>
+        <a href="#deduction" class="text-sm font-semibold text-slate-600 hover:text-brand-600 transition-colors">Kotitalousvähennys</a>
+        <a href="#contact" class="text-sm font-semibold text-slate-600 hover:text-brand-600 transition-colors">Yhteystiedot</a>
+      </div>
+      <a href="#contact" class="rounded-full bg-brand-600 px-6 py-2.5 text-sm font-bold text-white hover:bg-brand-700 transition-all shadow-md shadow-brand-600/20">
+        Pyydä Tarjous
+      </a>
+    </nav>
+  </header>
+
+  <!-- Hero: Valoisa, raikas ja huoleton koti -->
+  <section class="relative pt-36 pb-24 lg:pt-48 lg:pb-32 overflow-hidden bg-gradient-to-b from-white via-brand-50/50 to-brand-100/40">
+    <div class="mx-auto max-w-7xl px-6 lg:px-8 relative z-10 flex flex-col items-center text-center">
+      <div class="inline-flex items-center gap-2 rounded-full border border-emerald-200 bg-emerald-100/80 px-4 py-1.5 text-sm font-semibold text-brand-800 mb-8 shadow-sm">
+        <span>✨</span> Kotitalousvähennys jopa 60% työn osuudesta
+      </div>
+      
+      <h1 class="text-4xl sm:text-6xl lg:text-7xl font-display font-extrabold text-slate-900 tracking-tight mb-6 leading-tight max-w-4xl">
+        Luotettavaa kotipalvelua Kyröskoskella
+      </h1>
+      
+      <p class="mt-4 text-lg sm:text-xl leading-relaxed text-slate-600 mb-10 max-w-2xl font-light">
+        Kotipalvelu Lumoa tuo helpotusta ja lämpöä arkeen Kyröskosken alueella. Ota yhteyttä ja kysy lisää palveluistamme numerosta 044 9428102. Nauti puhtaasta ja raikkaasta kodista ilman siivousstressiä. Luotettavat, kokeneet siivoojat ja 100% tyytyväisyystakuu.
+      </p>
+      
+      <div class="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
+        <a href="#contact" class="rounded-full bg-brand-600 px-8 py-4 text-base font-bold text-white hover:bg-brand-700 transition-all shadow-lg shadow-brand-600/30 text-center">
+          Soita 044 9428102
+        </a>
+        <a href="#services" class="rounded-full bg-white border border-emerald-200 px-8 py-4 text-base font-semibold text-slate-700 hover:bg-emerald-50 transition-all text-center shadow-sm">
+          Katso siivouspaketit
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Palvelut: Pehmeät kortit minttuteemalla -->
+  <section id="services" class="py-24 bg-white">
+    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+      <div class="text-center mb-16 max-w-2xl mx-auto">
+        <span class="text-xs uppercase tracking-widest font-bold text-brand-600">Mitä siivoamme</span>
+        <h2 class="text-3xl sm:text-4xl font-display font-bold text-slate-900 tracking-tight mt-2 mb-4">Ammattitaitoiset siivouspalvelut</h2>
+        <p class="text-slate-600">Räätälöimme jokaisen siivouskerran toiveidesi ja kotisi tarpeiden mukaisesti.</p>
+      </div>
+      
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Palvelu 1 -->
+        <div class="bg-brand-50/40 p-8 rounded-3xl border border-emerald-100/80 hover:border-brand-500/50 hover:shadow-xl transition-all duration-300 group">
+          <div class="w-14 h-14 bg-white rounded-2xl flex items-center justify-center text-brand-600 text-2xl mb-6 shadow-sm group-hover:bg-brand-600 group-hover:text-white transition-colors">
+            🏡
+          </div>
+          <h3 class="text-xl font-display font-bold text-slate-900 mb-3">Kotihoiva ja huolenpito</h3>
+          <p class="text-slate-600 leading-relaxed text-sm font-light">Säännöllinen ylläpitosiivous arjen helpottamiseksi viikoittain tai joka toinen viikko.</p>
+        </div>
+        
+        <!-- Palvelu 2 -->
+        <div class="bg-brand-50/40 p-8 rounded-3xl border border-emerald-100/80 hover:border-brand-500/50 hover:shadow-xl transition-all duration-300 group">
+          <div class="w-14 h-14 bg-white rounded-2xl flex items-center justify-center text-brand-600 text-2xl mb-6 shadow-sm group-hover:bg-brand-600 group-hover:text-white transition-colors">
+            📦
+          </div>
+          <h3 class="text-xl font-display font-bold text-slate-900 mb-3">Kotisiivous ja puhtaanapito</h3>
+          <p class="text-slate-600 leading-relaxed text-sm font-light">Perusteellinen muuttosiivous ja loppusiivous takuulla, jotta asunnon luovutus sujuu huoleitta.</p>
+        </div>
+        
+        <!-- Palvelu 3 -->
+        <div class="bg-brand-50/40 p-8 rounded-3xl border border-emerald-100/80 hover:border-brand-500/50 hover:shadow-xl transition-all duration-300 group">
+          <div class="w-14 h-14 bg-white rounded-2xl flex items-center justify-center text-brand-600 text-2xl mb-6 shadow-sm group-hover:bg-brand-600 group-hover:text-white transition-colors">
+            🏢
+          </div>
+          <h3 class="text-xl font-display font-bold text-slate-900 mb-3">Asiointi- ja arjen tuki</h3>
+          <p class="text-slate-600 leading-relaxed text-sm font-light">Toimistotilojen, rappukäytävien ja liiketilojen edustava ja hygieeninen puhtaanapito.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Yhteydenotto & Tarjouspyyntö -->
+  <section id="contact" class="py-24 bg-brand-50/60 relative">
+    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+      <div class="flex flex-col lg:flex-row gap-16 items-center">
+        
+        <!-- Yhteystiedot -->
+        <div class="lg:w-1/2">
+          <span class="text-xs uppercase tracking-widest font-bold text-brand-600">Ota yhteyttä</span>
+          <h2 class="text-3xl sm:text-4xl font-display font-bold text-slate-900 tracking-tight mt-2 mb-6">Aloita puhtaampi arki jo tänään.</h2>
+          <p class="text-slate-600 mb-10 leading-relaxed font-light">
+            Kysy maksutonta arviokäyntiä tai hintatarjousta. Tulemme mielellämme tutustumaan kohteeseesi ja räätälöimme juuri teille sopivan siivousohjelman.
+          </p>
+          
+          <div class="bg-white rounded-3xl p-8 border border-emerald-100 shadow-sm space-y-6">
+            <div class="flex items-start gap-4">
+              <div class="w-10 h-10 rounded-full bg-emerald-50 text-brand-600 flex items-center justify-center font-bold">📍</div>
+              <div>
+                <p class="text-xs text-slate-500 font-semibold uppercase">Toiminta-alue</p>
+                <p class="text-slate-900 font-bold text-lg mt-0.5">Kyrönkatu 1, 39200 Kyröskoski, Suomi</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-4">
+              <div class="w-10 h-10 rounded-full bg-emerald-50 text-brand-600 flex items-center justify-center font-bold">📞</div>
+              <div>
+                <p class="text-xs text-slate-500 font-semibold uppercase">Asiakaspalvelu ja varaukset</p>
+                <p class="text-brand-600 font-bold text-xl mt-0.5">044 9428102</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Lomake -->
+        <div class="lg:w-1/2 w-full">
+          <div class="bg-white rounded-3xl shadow-xl border border-emerald-100 p-8 sm:p-10">
+            <h3 class="text-2xl font-display font-bold text-slate-900 mb-2">Pyydä siivoustarjous</h3>
+            <p class="text-slate-500 text-sm mb-8 font-light">Vastaamme yleensä saman työpäivän aikana.</p>
+            
+            <form action="https://formsubmit.co/joni@luottosivut.fi" method="POST" class="space-y-6">
+              <input type="text" name="_honey" style="display:none">
+              <input type="hidden" name="_captcha" value="false">
+              
+              <div class="grid grid-cols-1 gap-6">
+                <div>
+                  <label class="block text-sm font-semibold text-slate-900 mb-2">Nimi *</label>
+                  <input type="text" name="Nimi" required class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3.5 text-slate-900 focus:border-brand-600 focus:ring-1 focus:ring-brand-600 outline-none transition-all">
+                </div>
+                <div>
+                  <label class="block text-sm font-semibold text-slate-900 mb-2">Puhelin / Sähköposti *</label>
+                  <input type="text" name="Yhteystieto" required class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3.5 text-slate-900 focus:border-brand-600 focus:ring-1 focus:ring-brand-600 outline-none transition-all">
+                </div>
+                <div>
+                  <label class="block text-sm font-semibold text-slate-900 mb-2">Kohteen tiedot (esim. neliöt, huoneet, toivottu siivous)</label>
+                  <textarea name="Viesti" rows="4" placeholder="Esim. 85 m² kolmio, ylläpitosiivous 2 viikon välein..." class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3.5 text-slate-900 focus:border-brand-600 focus:ring-1 focus:ring-brand-600 outline-none transition-all resize-none"></textarea>
+                </div>
+              </div>
+              
+              <button type="submit" class="w-full bg-brand-600 text-white font-bold py-4 rounded-xl hover:bg-brand-700 transition-colors shadow-lg shadow-brand-600/20 mt-4">
+                Lähetä tarjouspyyntö
+              </button>
+            </form>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- Alatunniste -->
+  <footer class="bg-slate-900 py-12 border-t border-slate-800 text-center">
+    <div class="mx-auto max-w-7xl px-6 flex flex-col items-center">
+      <span class="text-xl font-display font-bold text-white mb-2">Kotipalvelu Lumoa</span>
+      <p class="text-sm text-slate-400 font-light">&copy; 2026 Kotipalvelu Lumoa. Kaikki oikeudet pidätetään.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
+
