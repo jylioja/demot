@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="fi" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mahnalan LVI-palvelu | LVI- ja Putkityöt</title>
+  <meta name="description" content="Mahnalan LVI-palvelu tarjoaa asiantuntevat LVI-työt ja alan tarvikkeet Hämeenkyrössä osoitteessa Sepäntie 1. Ota yhteyttä ja soita 044 5270276!" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#f0f9ff',
+              100: '#e0f2fe',
+              500: '#0ea5e9',
+              600: '#0284c7', // Puhdas LVI-vedensininen
+              700: '#0369a1',
+              800: '#075985',
+              900: '#0c4a6e',
+              navy: '#0f172a',
+              copper: '#ea580c', // Kupari/oranssi huomioväri
+              copper_dark: '#c2410c',
+            },
+          },
+          fontFamily: {
+            sans: ["Inter", "sans-serif"],
+            display: ["Outfit", "sans-serif"],
+          },
+        },
+      },
+    };
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@500;600;700;800;900&display=swap" rel="stylesheet" />
+
+  <!-- Some-esikatselun tägit -->
+  <meta property="og:title" content="Uusi verkkosivuluonnos: Mahnalan LVI-palvelu" />
+  <meta property="og:description" content="Huomasimme, että yrityksenne kaipaisi modernimpia kotisivuja. Koodasimme teille valmiin vedoksen, katso miltä näyttää!" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+</head>
+<body class="bg-slate-50 font-sans text-slate-800 antialiased selection:bg-brand-600 selection:text-white">
+
+  <!-- Luotettava yläpalkki päivystysnumerolla -->
+  <header class="fixed inset-x-0 top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200 shadow-sm transition-all">
+    <nav class="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
+      <a href="#" class="flex items-center gap-3 text-2xl font-display font-bold tracking-tight text-brand-navy">
+        <div class="h-9 w-9 bg-brand-600 rounded-lg flex items-center justify-center text-white text-lg shadow-md shadow-brand-600/30">
+          💧
+        </div>
+        <span>Mahnalan LVI-palvelu</span>
+      </a>
+      <div class="hidden items-center gap-8 md:flex">
+        <a href="#services" class="text-sm font-semibold text-slate-600 hover:text-brand-600 transition-colors">Palvelut</a>
+        <a href="#why-us" class="text-sm font-semibold text-slate-600 hover:text-brand-600 transition-colors">Miksi me?</a>
+        <a href="#contact" class="text-sm font-semibold text-slate-600 hover:text-brand-600 transition-colors">Yhteystiedot</a>
+      </div>
+      <a href="#contact" class="rounded-lg bg-brand-copper px-5 py-2.5 text-sm font-bold text-white hover:bg-brand-copper_dark transition-all shadow-md shadow-brand-copper/20">
+        Pyydä Tarjous
+      </a>
+    </nav>
+  </header>
+
+  <!-- Hero: Vesi/tekniikkateema -->
+  <section class="relative pt-36 pb-24 lg:pt-48 lg:pb-32 overflow-hidden bg-brand-navy">
+    <div class="absolute inset-0 opacity-15">
+      <svg class="h-full w-full" viewBox="0 0 100 100" preserveAspectRatio="none">
+        <path d="M0 50 Q 25 30, 50 50 T 100 50 L 100 100 L 0 100 Z" fill="#0284c7" />
+      </svg>
+    </div>
+    
+    <div class="mx-auto max-w-7xl px-6 lg:px-8 relative z-10 flex flex-col items-center text-center">
+      <div class="inline-flex items-center gap-2 rounded-full border border-sky-400/30 bg-sky-500/10 px-4 py-1.5 text-sm font-semibold text-sky-300 mb-8 backdrop-blur-sm">
+        <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span> Luotettavat LVI- ja putkityöt takuulla
+      </div>
+      
+      <h1 class="text-4xl sm:text-6xl lg:text-7xl font-display font-extrabold text-white tracking-tight mb-6 leading-tight max-w-4xl">
+        Luotettavaa LVI-palvelua Hämeenkyrössä
+      </h1>
+      
+      <p class="mt-4 text-lg sm:text-xl leading-relaxed text-slate-300 mb-10 max-w-2xl font-light">
+        Mahnalan LVI-palvelu tarjoaa asiantuntevat LVI-työt ja alan tarvikkeet Hämeenkyrössä osoitteessa Sepäntie 1. Ota yhteyttä ja soita 044 5270276! Putkiremontit, laiteasennukset ja nopea apu vuotoihin. Hoidamme työt ammattitaidolla alusta loppuun kiinteistösi arvoa varjellen.
+      </p>
+      
+      <div class="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
+        <a href="#contact" class="rounded-lg bg-brand-600 px-8 py-4 text-base font-bold text-white hover:bg-brand-700 transition-all shadow-lg shadow-brand-600/30 text-center">
+          Soita: 044 5270276
+        </a>
+        <a href="#services" class="rounded-lg bg-white/10 border border-white/20 px-8 py-4 text-base font-semibold text-white hover:bg-white/20 transition-all text-center backdrop-blur-sm">
+          Tutustu palveluihin
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Palvelut: Selkeät ja vakuuttavat laatikot -->
+  <section id="services" class="py-24 bg-white">
+    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+      <div class="text-center mb-16 max-w-2xl mx-auto">
+        <span class="text-xs uppercase tracking-widest font-bold text-brand-600">Palveluvalikoima</span>
+        <h2 class="text-3xl sm:text-4xl font-display font-bold text-slate-900 tracking-tight mt-2 mb-4">Kattavat LVI-palvelut</h2>
+        <p class="text-slate-600">Palvelemme niin kotitalouksia, taloyhtiöitä kuin yrityksiäkin kaikissa putkitöissä.</p>
+      </div>
+      
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Palvelu 1 -->
+        <div class="bg-brand-50/50 p-8 rounded-2xl border border-sky-100 hover:border-brand-500/40 hover:shadow-xl transition-all duration-300 group">
+          <div class="w-14 h-14 bg-white rounded-xl flex items-center justify-center text-brand-600 text-2xl mb-6 shadow-sm group-hover:bg-brand-600 group-hover:text-white transition-colors">
+            🔧
+          </div>
+          <h3 class="text-xl font-display font-bold text-slate-900 mb-3">LVI-asennus ja -huolto</h3>
+          <p class="text-slate-600 leading-relaxed text-sm">Hanojen, wc-istuinten ja kodinkoneiden kytkennät sekä pienemmät asennustyöt ripeästi.</p>
+        </div>
+        
+        <!-- Palvelu 2 -->
+        <div class="bg-brand-50/50 p-8 rounded-2xl border border-sky-100 hover:border-brand-500/40 hover:shadow-xl transition-all duration-300 group">
+          <div class="w-14 h-14 bg-white rounded-xl flex items-center justify-center text-brand-600 text-2xl mb-6 shadow-sm group-hover:bg-brand-600 group-hover:text-white transition-colors">
+            🚿
+          </div>
+          <h3 class="text-xl font-display font-bold text-slate-900 mb-3">LVI-tarvikemyynti</h3>
+          <p class="text-slate-600 leading-relaxed text-sm">Käyttövesi-, lämpö- ja viemäriputkien saneeraukset huolellisesti suunniteltuna ja toteutettuna.</p>
+        </div>
+        
+        <!-- Palvelu 3 -->
+        <div class="bg-brand-50/50 p-8 rounded-2xl border border-sky-100 hover:border-brand-500/40 hover:shadow-xl transition-all duration-300 group">
+          <div class="w-14 h-14 bg-white rounded-xl flex items-center justify-center text-brand-600 text-2xl mb-6 shadow-sm group-hover:bg-brand-600 group-hover:text-white transition-colors">
+            ⚡
+          </div>
+          <h3 class="text-xl font-display font-bold text-slate-900 mb-3">Putkityöt ja saneeraukset</h3>
+          <p class="text-slate-600 leading-relaxed text-sm">Ilmalämpöpumput, lämminvesivaraajat ja lämmitysjärjestelmien optimointi säästämään energiaa.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Yhteydenotto & Tarjouspyyntö -->
+  <section id="contact" class="py-24 bg-slate-100 relative">
+    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+      <div class="flex flex-col lg:flex-row gap-16 items-center">
+        
+        <!-- Yhteystiedot -->
+        <div class="lg:w-1/2">
+          <span class="text-xs uppercase tracking-widest font-bold text-brand-copper">Ota yhteyttä heti</span>
+          <h2 class="text-3xl sm:text-4xl font-display font-bold text-slate-900 tracking-tight mt-2 mb-6">Tarvitsetko luotettavan putkimiehen?</h2>
+          <p class="text-slate-600 mb-10 leading-relaxed">
+            Pyydä maksuton kustannusarvio tai kysy neuvoa. Vastaamme yhteydenottoihin nopeasti, jotta putkiongelmasi ratkeaa viivytyksettä.
+          </p>
+          
+          <div class="bg-white rounded-2xl p-8 border border-slate-200 shadow-sm space-y-6">
+            <div class="flex items-start gap-4">
+              <div class="w-10 h-10 rounded-full bg-sky-50 text-brand-600 flex items-center justify-center font-bold">📍</div>
+              <div>
+                <p class="text-xs text-slate-500 font-semibold uppercase">Toimialue / Osoite</p>
+                <p class="text-slate-900 font-bold text-lg mt-0.5">Sepäntie 1, 39100 Hämeenkyrö, Suomi</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-4">
+              <div class="w-10 h-10 rounded-full bg-sky-50 text-brand-600 flex items-center justify-center font-bold">📞</div>
+              <div>
+                <p class="text-xs text-slate-500 font-semibold uppercase">Puhelinnumero (Suora soitto)</p>
+                <p class="text-brand-600 font-bold text-xl mt-0.5">044 5270276</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Lomake -->
+        <div class="lg:w-1/2 w-full">
+          <div class="bg-white rounded-2xl shadow-xl border border-slate-200/80 p-8 sm:p-10">
+            <h3 class="text-2xl font-display font-bold text-slate-900 mb-2">Jätä tarjouspyyntö</h3>
+            <p class="text-slate-500 text-sm mb-8">Kerro lyhyesti kohteesta, palaamme asiaan ripeästi.</p>
+            
+            <form action="https://formsubmit.co/joni@luottosivut.fi" method="POST" class="space-y-6">
+              <input type="text" name="_honey" style="display:none">
+              <input type="hidden" name="_captcha" value="false">
+              
+              <div class="grid grid-cols-1 gap-6">
+                <div>
+                  <label class="block text-sm font-semibold text-slate-900 mb-2">Nimi *</label>
+                  <input type="text" name="Nimi" required class="w-full bg-slate-50 border border-slate-300 rounded-lg px-4 py-3 text-slate-900 focus:border-brand-600 focus:ring-1 focus:ring-brand-600 outline-none transition-all">
+                </div>
+                <div>
+                  <label class="block text-sm font-semibold text-slate-900 mb-2">Puhelinnumero *</label>
+                  <input type="text" name="Puhelin" required class="w-full bg-slate-50 border border-slate-300 rounded-lg px-4 py-3 text-slate-900 focus:border-brand-600 focus:ring-1 focus:ring-brand-600 outline-none transition-all">
+                </div>
+                <div>
+                  <label class="block text-sm font-semibold text-slate-900 mb-2">Mitä putki- tai LVI-työtä tarvitset?</label>
+                  <textarea name="Viesti" rows="4" placeholder="Esim. Keittiöremontin putkityöt, vuotava hana, lämminvesivaraajan vaihto..." class="w-full bg-slate-50 border border-slate-300 rounded-lg px-4 py-3 text-slate-900 focus:border-brand-600 focus:ring-1 focus:ring-brand-600 outline-none transition-all resize-none"></textarea>
+                </div>
+              </div>
+              
+              <button type="submit" class="w-full bg-brand-copper text-white font-bold py-4 rounded-lg hover:bg-brand-copper_dark transition-colors shadow-lg shadow-brand-copper/20 mt-4">
+                Lähetä yhteydenottopyyntö
+              </button>
+            </form>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- Alatunniste -->
+  <footer class="bg-brand-navy py-12 border-t border-slate-800 text-center">
+    <div class="mx-auto max-w-7xl px-6 flex flex-col items-center">
+      <span class="text-xl font-display font-bold text-white mb-2">Mahnalan LVI-palvelu</span>
+      <p class="text-sm text-slate-400">&copy; 2026 Mahnalan LVI-palvelu. Kaikki oikeudet pidätetään.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
+
