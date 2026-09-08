@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="fi" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mittasaneeraus Oy | Asiantuntevat Kattoremontit ja Kattotyöt</title>
+  <meta name="description" content="Mittasaneeraus Oy toteuttaa kodin ja kiinteistöjen saneeraukset vankalla ammattitaidolla Lempäälässä ja lähialueilla." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              terracotta: '#ea580c', // Tiilenpunainen / Kattopelti
+              terracotta_dark: '#c2410c',
+              slate: '#1e293b',      // Tumma kattoliuskekivi
+              slate_dark: '#0f172a',
+              zinc: '#3f3f46',
+            },
+          },
+          fontFamily: {
+            sans: ["Plus Jakarta Sans", "sans-serif"],
+            display: ["Oswald", "sans-serif"],
+          },
+        },
+      },
+    };
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Some-esikatselun tägit -->
+  <meta property="og:title" content="Uusi verkkosivuluonnos: Mittasaneeraus Oy" />
+  <meta property="og:description" content="Huomasimme, että yrityksenne kaipaisi modernimpia kotisivuja. Koodasimme teille valmiin vedoksen, katso miltä näyttää!" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+</head>
+<body class="bg-slate-50 font-sans text-slate-800 antialiased selection:bg-brand-terracotta selection:text-white">
+
+  <!-- Tukeva ja jämäkkä yläpalkki -->
+  <header class="fixed inset-x-0 top-0 z-50 bg-white/95 backdrop-blur-md border-b-2 border-brand-terracotta shadow-md transition-all">
+    <nav class="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
+      <a href="#" class="flex items-center gap-3 text-2xl font-display font-bold tracking-wide text-brand-slate_dark uppercase">
+        <div class="h-9 w-9 bg-brand-terracotta rounded flex items-center justify-center text-white text-lg shadow-sm">
+          🏠
+        </div>
+        <span>Mittasaneeraus Oy</span>
+      </a>
+      <div class="hidden items-center gap-8 md:flex">
+        <a href="#services" class="text-sm font-semibold uppercase tracking-wider text-slate-600 hover:text-brand-terracotta transition-colors">Kattopalvelut</a>
+        <a href="#inspection" class="text-sm font-semibold uppercase tracking-wider text-slate-600 hover:text-brand-terracotta transition-colors">Kattotarkastus</a>
+        <a href="#contact" class="text-sm font-semibold uppercase tracking-wider text-slate-600 hover:text-brand-terracotta transition-colors">Yhteystiedot</a>
+      </div>
+      <a href="#contact" class="rounded bg-brand-terracotta px-6 py-2.5 text-sm font-bold uppercase tracking-wider text-white hover:bg-brand-terracotta_dark transition-all shadow-md shadow-brand-terracotta/20">
+        Tilaa Kuntotarkastus
+      </a>
+    </nav>
+  </header>
+
+  <!-- Hero: Vahva kattorakenteiden tunnelma -->
+  <section class="relative pt-36 pb-24 lg:pt-48 lg:pb-32 overflow-hidden bg-brand-slate_dark text-white">
+    <div class="absolute inset-0 opacity-10">
+      <svg class="h-full w-full" viewBox="0 0 100 100" preserveAspectRatio="none">
+        <polygon points="0,100 50,0 100,100" fill="#ea580c" />
+      </svg>
+    </div>
+    
+    <div class="mx-auto max-w-7xl px-6 lg:px-8 relative z-10 flex flex-col items-center text-center">
+      <div class="inline-flex items-center gap-2 rounded-full border border-orange-500/30 bg-orange-500/10 px-4 py-1.5 text-sm font-semibold text-orange-400 mb-8 backdrop-blur-sm">
+        <span>🛡️</span> Suomalaisiin sääoloihin rakennetut katot takuutyönä
+      </div>
+      
+      <h1 class="text-4xl sm:text-6xl lg:text-7xl font-display font-bold uppercase tracking-wide mb-6 leading-tight max-w-4xl">
+        Laadukasta saneerausta Lempäälässä
+      </h1>
+      
+      <p class="mt-4 text-lg sm:text-xl leading-relaxed text-slate-300 mb-10 max-w-2xl font-light">
+        Mittasaneeraus Oy toteuttaa kodin ja kiinteistöjen saneeraukset vankalla ammattitaidolla Lempäälässä ja lähialueilla. Pelti-, tiili- ja huopakattoremontit avaimet käteen -toteutuksena. Varmista kotisi suoja ja pyydä maksuton asiantuntija-arvio.
+      </p>
+      
+      <div class="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
+        <a href="#contact" class="rounded bg-brand-terracotta px-9 py-4 text-base font-bold uppercase tracking-wider text-white hover:bg-brand-terracotta_dark transition-all shadow-lg shadow-brand-terracotta/30 text-center">
+          Pyydä tarjous
+        </a>
+        <a href="#services" class="rounded bg-white/10 border border-white/20 px-9 py-4 text-base font-semibold uppercase tracking-wider text-white hover:bg-white/20 transition-all text-center backdrop-blur-sm">
+          Katso kattoratkaisut
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Palvelut: Kestävät kattokortit -->
+  <section id="services" class="py-24 bg-white">
+    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+      <div class="text-center mb-16 max-w-2xl mx-auto">
+        <span class="text-xs uppercase tracking-widest font-bold text-brand-terracotta">Osaamisemme</span>
+        <h2 class="text-3xl sm:text-4xl font-display font-bold uppercase text-slate-900 tracking-wide mt-2 mb-4">Laadukkaat Kattopalvelut</h2>
+        <p class="text-slate-600">Toteutamme kattoremontit ja huollot omakotitaloihin, paritaloihin sekä vapaa-ajan asunnoille.</p>
+      </div>
+      
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Palvelu 1 -->
+        <div class="bg-slate-50 p-8 rounded-xl border border-slate-200 hover:border-brand-terracotta hover:shadow-xl transition-all duration-300 group">
+          <div class="w-14 h-14 bg-white rounded-lg flex items-center justify-center text-brand-terracotta text-2xl mb-6 shadow-sm group-hover:bg-brand-terracotta group-hover:text-white transition-colors">
+            🔨
+          </div>
+          <h3 class="text-xl font-display font-bold uppercase text-slate-900 mb-3">Huoneistoremontit</h3>
+          <p class="text-slate-600 leading-relaxed text-sm">Kestävät ja helppohoitoiset lukkosauma- ja profiilipeltikatot ammattitaidolla asennettuna.</p>
+        </div>
+        
+        <!-- Palvelu 2 -->
+        <div class="bg-slate-50 p-8 rounded-xl border border-slate-200 hover:border-brand-terracotta hover:shadow-xl transition-all duration-300 group">
+          <div class="w-14 h-14 bg-white rounded-lg flex items-center justify-center text-brand-terracotta text-2xl mb-6 shadow-sm group-hover:bg-brand-terracotta group-hover:text-white transition-colors">
+            🧱
+          </div>
+          <h3 class="text-xl font-display font-bold uppercase text-slate-900 mb-3">Kylpyhuonesaneeraukset</h3>
+          <p class="text-slate-600 leading-relaxed text-sm">Perinteiset tiilikatot ja modernit huopakatot, aluskatteet sekä vaativat läpiviennit tiiviisti tehtyinä.</p>
+        </div>
+        
+        <!-- Palvelu 3 -->
+        <div class="bg-slate-50 p-8 rounded-xl border border-slate-200 hover:border-brand-terracotta hover:shadow-xl transition-all duration-300 group">
+          <div class="w-14 h-14 bg-white rounded-lg flex items-center justify-center text-brand-terracotta text-2xl mb-6 shadow-sm group-hover:bg-brand-terracotta group-hover:text-white transition-colors">
+            🪜
+          </div>
+          <h3 class="text-xl font-display font-bold uppercase text-slate-900 mb-3">Keittiöremontit</h3>
+          <p class="text-slate-600 leading-relaxed text-sm">Sadevesijärjestelmät, rännit, kattosillat, lumiesteet ja lapetikkaat turvalliseen katolla liikkumiseen.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Yhteydenotto & Kuntokartoitus -->
+  <section id="contact" class="py-24 bg-slate-100 relative">
+    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+      <div class="flex flex-col lg:flex-row gap-16 items-center">
+        
+        <!-- Yhteystiedot -->
+        <div class="lg:w-1/2">
+          <span class="text-xs uppercase tracking-widest font-bold text-brand-terracotta">Maksuton kattotarkastus</span>
+          <h2 class="text-3xl sm:text-4xl font-display font-bold uppercase text-slate-900 tracking-wide mt-2 mb-6">Missä kunnossa kattosi on?</h2>
+          <p class="text-slate-600 mb-10 leading-relaxed font-light">
+            Käymme katollasi, tarkistamme aluskatteen ja rakenteet sekä toimitamme rehellisen kuntoraportin ilman sitoumuksia.
+          </p>
+          
+          <div class="bg-white rounded-xl p-8 border border-slate-200 shadow-sm space-y-6">
+            <div class="flex items-start gap-4">
+              <div class="w-10 h-10 rounded bg-orange-50 text-brand-terracotta flex items-center justify-center font-bold">📍</div>
+              <div>
+                <p class="text-xs text-slate-500 font-semibold uppercase">Toiminta-alue</p>
+                <p class="text-slate-900 font-bold text-lg mt-0.5">Iisakintie 7, 37560 Lempäälä, Suomi</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-4">
+              <div class="w-10 h-10 rounded bg-orange-50 text-brand-terracotta flex items-center justify-center font-bold">📞</div>
+              <div>
+                <p class="text-xs text-slate-500 font-semibold uppercase">Kattoasiantuntijan puhelin</p>
+                <p class="text-brand-terracotta font-bold text-xl mt-0.5">Ei ilmoitettu</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Lomake -->
+        <div class="lg:w-1/2 w-full">
+          <div class="bg-white rounded-2xl shadow-xl border border-slate-200 p-8 sm:p-10">
+            <h3 class="text-2xl font-display font-bold uppercase text-slate-900 mb-2">Tilaa ilmainen kattotarkastus</h3>
+            <p class="text-slate-500 text-sm mb-8 font-light">Täytä tiedot, niin sovimme sopivan tarkastusajankohdan.</p>
+            
+            <form action="https://formsubmit.co/joni@luottosivut.fi" method="POST" class="space-y-6">
+              <input type="text" name="_honey" style="display:none">
+              <input type="hidden" name="_captcha" value="false">
+              
+              <div class="grid grid-cols-1 gap-6">
+                <div>
+                  <label class="block text-sm font-semibold text-slate-900 mb-2">Nimi *</label>
+                  <input type="text" name="Nimi" required class="w-full bg-slate-50 border border-slate-300 rounded px-4 py-3.5 text-slate-900 focus:border-brand-terracotta focus:ring-1 focus:ring-brand-terracotta outline-none transition-all">
+                </div>
+                <div>
+                  <label class="block text-sm font-semibold text-slate-900 mb-2">Puhelinnumero *</label>
+                  <input type="text" name="Puhelin" required class="w-full bg-slate-50 border border-slate-300 rounded px-4 py-3.5 text-slate-900 focus:border-brand-terracotta focus:ring-1 focus:ring-brand-terracotta outline-none transition-all">
+                </div>
+                <div>
+                  <label class="block text-sm font-semibold text-slate-900 mb-2">Kohteen osoite ja katon tiedot</label>
+                  <textarea name="Viesti" rows="4" placeholder="Esim. Omakotitalo, nykyinen huopakatto vuotaa / peltikaton uusiminen..." class="w-full bg-slate-50 border border-slate-300 rounded px-4 py-3.5 text-slate-900 focus:border-brand-terracotta focus:ring-1 focus:ring-brand-terracotta outline-none transition-all resize-none"></textarea>
+                </div>
+              </div>
+              
+              <button type="submit" class="w-full bg-brand-terracotta text-white font-bold uppercase tracking-wider py-4 rounded hover:bg-brand-terracotta_dark transition-colors shadow-lg shadow-brand-terracotta/20 mt-4">
+                Lähetä yhteydenotto
+              </button>
+            </form>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- Alatunniste -->
+  <footer class="bg-brand-slate_dark py-12 border-t border-slate-800 text-center">
+    <div class="mx-auto max-w-7xl px-6 flex flex-col items-center">
+      <span class="text-xl font-display font-bold uppercase text-white mb-2">Mittasaneeraus Oy</span>
+      <p class="text-sm text-slate-400 font-light">&copy; 2026 Mittasaneeraus Oy. Kaikki oikeudet pidätetään.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
+
